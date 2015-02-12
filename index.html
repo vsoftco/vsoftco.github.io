@@ -4,6 +4,7 @@
 
 <head>
 	<title>Vlad's web page</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
 	<script>
   		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -91,7 +92,14 @@
 		citations<a>):
 	</h3>
 	<ul>
-		<li>
+<!-- 		<li>
+			Srinivasan Arunachalam, Vlad Gheorghiu, Tomas Jochym-O'Connor, Michele Mosca 
+			and Priyaa Varshinee Srinivasan,
+			<b>"On the Robustness of Bucket Brigade Quantum RAM"</b>,
+			<a href="http://arxiv.org/abs/1502.12345">arXiv:1502.12345 [quant-ph]</a>
+			(2015) 
+		</li>
+ -->		<li>
 			Vlad Gheorghiu, 
 			<b>"Quantum++ - A C++11 Quantum Computing Library"</b>, 
 			<a href="http://arxiv.org/abs/1412.4704">arXiv:1412.4704 [quant-ph]</a> 
@@ -250,7 +258,7 @@
 	<h3>Code I wrote (my GitHub <a href="https://github.com/vsoftco">repositories</a>):</h3>
 	<ul>
 		<li>
-			<a href="http://vsoftco.github.io/qpp/"><b>Quantum++</b></a>, 
+			<a href="http://vsoftco.github.io/qpp/"><code>Quantum++</code></a>, 
 			a C++11 general purpose quantum computing library, composed solely of template header files. 
 			It uses the 
 			<a href="http://eigen.tuxfamily.org/">Eigen 3</a> 
@@ -260,59 +268,59 @@
 			Status: active, version 0.1 relased under GNU Public License.
 		</li>
 		<li>
-			<a href="https://github.com/vsoftco/pytexnumber"><b>pytexnumber</b></a>, 
+			<a href="https://github.com/vsoftco/pytexnumber"><code>pytexnumber</code></a>, 
 			a Python 2/3 console program for renumbering latex equations.
 			<ul>
 				<li>
 					Usage:
 					<ul>
 						<li>
-							<b>python3 py3texnumber.py 
-							&lt;in.tex&gt; &lt;out.tex&gt; &lt;pattern&gt; &lt;replacement&gt;</b>
+							<code>python3 py3texnumber.py 
+								<in.tex> <out.tex> <pattern> <replacement></code>
 							- for the Python 3 version.
 						</li>
 						<li>
-							<b>python py2texnumber.py 
-							&lt;in.tex&gt; &lt;out.tex&gt; &lt;pattern&gt; &lt;replacement&gt;</b>
+							<code>python py2texnumber.py 
+								<in.tex> <out.tex> <pattern> <replacement></code>
 							- for the Python 2 version.
 						</li>
 					</ul>
 				</li>
 				<li>
-					Description: replaces all labels in <b>&lt;in.tex&gt;</b> 
-					that match a given input <b>&lt;pattern&gt;</b>, such as 
-					<b>\label{&lt;pattern&gt;...}</b> and all corresponding 
-					references (<b>\ref</b>, <b>\eqref</b>, <b>\pageref</b>) with 
-					renumbered ones <b>&lt;replacement&gt;idx</b>, where <b>idx</b>
-					counts the matching <b>\label{&lt;pattern&gt;...}</b> 
-					order of appearance, i.e. equals 1 for the first <b>\label</b> 
+					Description: replaces all labels in <code><in.tex></code> 
+					that match a given input <code><pattern></code>, such as 
+					<code>\label{<pattern>...}</code> and all corresponding 
+					references (<code>\ref</code>, <code>\eqref</code>, <code>\pageref</code>) 
+					with renumbered ones <code><replacement>idx</code>, where <code>idx</code>
+					counts the matching <code>\label{<pattern>...}</code> 
+					order of appearance, i.e. equals 1 for the first <code>\label</code>
 					that matches the input pattern, 2 for the second etc. 
-					The <b>&lt;in.tex&gt;</b> is left unchanged and the 
-					modifications are written to <b>&lt;out.tex&gt;</b>.
+					The <code><in.tex></code> is left unchanged and the 
+					modifications are written to <code><out.tex></code>.
 				</li>
 				<li>
-					Example: consider a latex file <b>source.tex</b> having three labels, 
-					named, in order of appearance, <b>\label{eqn5}</b>, 
-					<b>\label{eqn_important}</b> and lastly <b>\label{entropy}</b>. 
+					Example: consider a latex file <code>source.tex</code> having three labels, 
+					named, in order of appearance, <code>\label{eqn5}</code>, 
+					<code>\label{eqn_important}</code> and lastly <code>\label{entropy}</code>. 
 					Then the command 
 					<ul>
-						<li><b>python3 py3texnumber.py in.tex out.tex eqn Eqn</b></li>
+						<li><code>python3 py3texnumber.py in.tex out.tex eqn Eqn</code></li>
 					</ul>
-					will replace <b>\label{eqn5}</b> by <b>\label{Eqn1}</b> 
+					will replace <code>\label{eqn5}</code> by <code>\label{Eqn1}</code> 
 					(and also all references to eqn5 will automatically 
-					become references to <b>Eqn1</b>) and replace 
-					<b>\label{eqn_important}</b> by <b>\label{Eqn2}</b> 
+					become references to <code>Eqn1</code>) and replace 
+					<code>\label{eqn_important}</code> by <code>\label{Eqn2}</code> 
 					(again together with the corresponding references). 
-					The <b>\label{entropy}</b> remains unchanged since 
-					it does not match the input pattern <b>\label{eqn...}</b>. 
-					The results are saved to the file <b>out.tex</b>.
+					The <code>\label{entropy}</code> remains unchanged since 
+					it does not match the input pattern <code>\label{eqn...}</code>. 
+					The results are saved to the file <code>out.tex</code>.
 				</li>
 			</ul> 
 		</li>
 		<li>
-			<a href="http://vsoftco.github.io/GTexnumber.zip"><b>GTexnumber</b></a>: 
+			<a href="http://vsoftco.github.io/GTexnumber.zip"><code>GTexnumber</code></a>: 
 			A GUI Java program for renumbering latex equations.
-			<a href="http://vsoftco.github.io/Texnumber.zip"><b>Texnumber</b></a>: 
+			<a href="http://vsoftco.github.io/Texnumber.zip"><code>Texnumber</code></a>: 
 			the console version. The Java sources are included in the .jar files. 
 			The Netbeans projects are located 
 			<a href="https://github.com/vsoftco/texnumber_Netbeans">here</a>.
@@ -320,18 +328,18 @@
 				<li>
 					Usage: Unzip the archive then run the program with 
 					<ul>
-						<li><b>java -jar GTexnumber.jar</b></li>
+						<li><code>java -jar GTexnumber.jar</code></li>
 					</ul>
 					for the GUI version, or 
 					<ul>
-						<li><b>java -jar Texnumber.jar 
-						&lt;in.tex&gt; &lt;out.tex&gt; &lt;pattern&gt; &lt;replacement&gt;
-						</b></li>
+						<li><code>java -jar Texnumber.jar 
+						<in.tex> <out.tex> <pattern> <replacement>
+						</code></li>
 					</ul>
 					for the console version.
 				</li>
 				<li>
-					Description: same as <b>pytexnumber</b> above. For the GUI version, 
+					Description: same as <code>pytexnumber</code> above. For the GUI version, 
 					the user's input is performed through the graphical interface.
 				</li>
 			</ul>
