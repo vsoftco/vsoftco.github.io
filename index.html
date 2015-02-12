@@ -287,16 +287,16 @@
 					</ul>
 				</li>
 				<li>
-					Description: replaces all labels in <code><in.tex></code> 
-					that match a given input <code><pattern></code>, such as 
-					<code>\label{<pattern>...}</code> and all corresponding 
+					Description: replaces all labels in <code>&lt;in.tex></code> 
+					that match a given input <code>&lt;pattern></code>, such as 
+					<code>\label{&lt;pattern>...}</code> and all corresponding 
 					references (<code>\ref</code>, <code>\eqref</code>, <code>\pageref</code>) 
-					with renumbered ones <code><replacement>idx</code>, where <code>idx</code>
-					counts the matching <code>\label{<pattern>...}</code> 
+					with renumbered ones <code>&lt;replacement>idx</code>, where <code>idx</code>
+					counts the matching <code>\label{&lt;pattern>...}</code> 
 					order of appearance, i.e. equals 1 for the first <code>\label</code>
 					that matches the input pattern, 2 for the second etc. 
-					The <code><in.tex></code> is left unchanged and the 
-					modifications are written to <code><out.tex></code>.
+					The file <code>&lt;in.tex></code> is left unchanged and the 
+					modifications are written to <code>&lt;out.tex></code>.
 				</li>
 				<li>
 					Example: consider a latex file <code>source.tex</code> having three labels, 
@@ -306,14 +306,14 @@
 					<ul>
 						<li><code>python3 py3texnumber.py in.tex out.tex eqn Eqn</code></li>
 					</ul>
-					will replace <code>\label{eqn5}</code> by <code>\label{Eqn1}</code> 
-					(and also all references to eqn5 will automatically 
+					replaces <code>\label{eqn5}</code> by <code>\label{Eqn1}</code> 
+					(and also all references to <code>eqn5</code> automatically 
 					become references to <code>Eqn1</code>) and replace 
 					<code>\label{eqn_important}</code> by <code>\label{Eqn2}</code> 
 					(again together with the corresponding references). 
 					The <code>\label{entropy}</code> remains unchanged since 
 					it does not match the input pattern <code>\label{eqn...}</code>. 
-					The results are saved to the file <code>out.tex</code>.
+					The results are saved to the file <code>&lt;out.tex></code>.
 				</li>
 			</ul> 
 		</li>
