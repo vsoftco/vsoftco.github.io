@@ -32,6 +32,11 @@ a {
     text-decoration: none;
 } 
 
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
 a[id="anchor"] {
     display: block;
     position: relative;
