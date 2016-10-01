@@ -12,7 +12,8 @@ header {
 }
 
 body {
-  margin-top: 100px;
+  margin-top: 90px;
+  font-family: verdana;
 }
 
 ul[place="header"] {
@@ -38,7 +39,7 @@ a[id="anchor"] {
 li[place="header"] {
   display: inline;
   text-align: right;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px 0px 0px;
 }
 
 li[place="body"] {
@@ -51,6 +52,11 @@ h2 {
   padding: 10px 0px 0px 0px;
 }
 
+h3 {
+  font-family: verdana;
+  padding: 10px 0px 0px 0px;
+}
+
 p {
   font-family: verdana;
 }
@@ -59,8 +65,4 @@ code
 {
     font-family: Courier, monospace;
     color: darkblue;
-}
-
-p.ex {
-    width: 100px;
 }

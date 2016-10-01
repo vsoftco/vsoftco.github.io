@@ -29,9 +29,8 @@
 
   
   <!-- Personal photo -->
-  <img align="right" src="me.jpg" alt="Vlad" width="280" height="350" style="margin:2px 5px"></img>
+  <img align="right" src="me.jpg" alt="Vlad" width="280" height="285" style="margin:15px 10px"></img>
   
-
   <!-- About section is just at the top -->
   <a name="about" id="anchor"></a>
   <h2>About</h2>
@@ -51,6 +50,9 @@
       <a href="http://vsoftco.github.io/CV_withpubl.pdf">CV</a> (as of September 2016)
   </p>
 
+  "Try not to become a man of success,<br> 
+  but rather try to become a man of value"<br> 
+  &ndash;<a href=http://en.wikipedia.org/wiki/Albert_Einstein>Albert Einstein</a>
 
   <!-- Contact section -->
   <a name="contact" id="anchor"></a>
@@ -66,6 +68,7 @@
       <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0xAB8D836A2EA7F099">PGP Public Key (4096 bit)</a>
   </p>
 
+  
 
   <!-- Research section -->
   <a name="research" id="anchor"></a>
@@ -88,7 +91,7 @@
       International Journal of Quantum Information, 
       Optics Communications.
   
-    <h3>Work in progress</h3>
+    <h3 >Work in progress</h3>
     <ul>
       <li>
         Quantum software, quantum architectures
@@ -106,6 +109,7 @@
 
   </p>
 
+  
 
   <!-- Publication section -->
   <a name="publications" id="anchor"></a>
@@ -114,7 +118,7 @@
     arXiv <a href="http://arxiv.org/a/gheorghiu_v_1">feed</a>, 
 
     Google Scholar <a href="http://scholar.google.ca/citations?user=BTc_3G0AAAAJ&hl=en">
-    citations<a>
+    citations</a>
 
     <ol reversed>
       <li>
@@ -279,6 +283,7 @@
     </ol>
   </p>
 
+  
 
   <!-- Code section -->
   <a name="code" id="anchor"></a>
@@ -287,8 +292,9 @@
     <a href="https://github.com/vsoftco">Complete GitHub repositories</a>
 
     <ul>
+      <!-- Quantum++ -->
       <li>
-        <a href="http://vsoftco.github.io/qpp/"><code>Quantum++</code></a> &ndash; 
+        <a href="http://vsoftco.github.io/qpp/"><code>Quantum++</code></a> <br>&ndash; 
         a C++11 general purpose quantum computing library, composed solely of template header files. 
         It uses the 
         <a href="http://eigen.tuxfamily.org/">Eigen 3</a> 
@@ -297,8 +303,10 @@
         multi-processing library.
         Status: active, version 0.8.6, relased under GNU Public License.
       </li><br>
+      
+      <!-- pytexnumber -->
       <li>
-        <a href="https://github.com/vsoftco/pytexnumber"><code>pytexnumber</code></a> &ndash; 
+        <a href="https://github.com/vsoftco/pytexnumber"><code>pytexnumber</code></a> <br>&ndash;
         a Python 2/3 console program for renumbering latex references (labels).
         <ul>
           <li>
@@ -315,7 +323,7 @@
                 - for the Python 2 version.
               </li>
             </ul>
-          </li>
+          </li><br>
           <li>
             Description: replaces all labels in <code>&lt;in.tex></code> 
             that match a given input <code>&lt;pattern></code>, such as 
@@ -327,7 +335,7 @@
             that matches the input pattern, 2 for the second etc. 
             The file <code>&lt;in.tex></code> is left unchanged and the 
             modifications are written to <code>&lt;out.tex></code>.
-          </li>
+          </li><br>
           <li>
             Example: consider a latex file <code>&lt;source.tex></code> having three labels, 
             named, in order of appearance, <code>\label{eqn5}</code>, 
@@ -347,8 +355,10 @@
           </li>
         </ul> 
       </li><br>
+      
+      <!-- cpptexnumber -->
       <li>
-        <a href="https://github.com/vsoftco/cpptexnumber"><code>cpptexnumber</code></a> &ndash; 
+        <a href="https://github.com/vsoftco/cpptexnumber"><code>cpptexnumber</code></a> <br>&ndash;
         the C++11 version of <code>pytexnumber</code> above. A C++98 version is also available.
         <ul>
           <li>
@@ -356,35 +366,52 @@
           </li>
         </ul>
       </li><br>
+      
+      <!-- GTexnumber -->
       <li>
-        <a href="http://vsoftco.github.io/GTexnumber.zip"><code>GTexnumber</code></a> &ndash; 
+        <a href="http://vsoftco.github.io/GTexnumber.zip"><code>GTexnumber</code></a> <br>&ndash;
         a GUI Java program for renumbering latex references (labels).
-        <a href="http://vsoftco.github.io/Texnumber.zip"><code>Texnumber</code></a>: 
-        the console version. The Java sources are included in the .jar files. 
-        The Netbeans projects are located 
+        The Java sources are included in the .jar files. 
+        The Netbeans project is located 
         <a href="https://github.com/vsoftco/texnumber_Netbeans">here</a>.
         <ul>
           <li>
-            Usage: Unzip the archive then run the program with 
-            <ul>
-              <li><code>java -jar GTexnumber.jar</code></li>
-            </ul>
-            for the GUI version, or 
-            <ul>
-              <li><code>java -jar Texnumber.jar 
-              <in.tex> <out.tex> <pattern> <replacement>
-              </code></li>
-            </ul>
-            for the console version.
-          </li>
-          <li>
-            Description: same as <code>pytexnumber</code> above. For the GUI version, 
+            Description: same as <code>pytexnumber</code> above, except that 
             the user's input is performed through the graphical interface.
+          </li><br>
+          <li>
+              Usage: Unzip the archive then run the program with 
+              <ul>
+                <li><code>java -jar GTexnumber.jar</code></li>
+              </ul>
           </li>
         </ul>
-      </li>
+      </li><br>
+      
+      <!-- Texnumber -->
+      <li>
+        <a href="http://vsoftco.github.io/Texnumber.zip"><code>Texnumber</code></a> <br>&ndash;
+        A console Java program for renumbering latex references (labels). 
+        The Java sources are included in the .jar files. 
+        The Netbeans project is located 
+        <a href="https://github.com/vsoftco/texnumber_Netbeans">here</a>.
+        <ul>
+          <li>
+            Description: same as <code>pytexnumber</code> above.
+          </li><br>
+          <li>
+              Usage: Unzip the archive then run the program with 
+              <ul>
+                <li><code>java -jar GTexnumber.jar</code></li>
+              </ul>
+          </li>
+        </ul>
+      </li><br>
+    
     </ul>
   </p>
+
+  
 
   <!-- Stackoverflow -->
   <p> 
@@ -402,9 +429,11 @@
           title="An Elo-based rating system for Stack Overflow"
           alt="An Elo-based rating system for Stack Overflow"></a>
   </p>
+  
+  
 
   <p>  
-    Last modified: September 2016. 
+    Last modified: October 2016. 
     Visited for 
       <a href="http://www.easycounter.com/">
       <img src="http://www.easycounter.com/counter.php?vsoftco" alt="Web Counters" border="0">
