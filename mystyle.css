@@ -1,11 +1,66 @@
-html
-{
-	font-family: Arial;
+header {
+  text-align: right;
+  font-family: verdana;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background: black;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  margin-top: 100px;
+}
+
+ul[place="header"] {
+  padding: 10px;
+}
+
+ul[place="body"] {
+  margin: 20px;
+  padding: 5px;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+} 
+
+a[id="anchor"] {
+    display: block;
+    position: relative;
+    top: -75px;
+}
+
+li[place="header"] {
+  display: inline;
+  text-align: right;
+  padding: 0px 10px 0px 10px;
+}
+
+li[place="body"] {
+  font-family: verdana;
+  padding: 0px 0px 0px 10px;
+}
+
+h2 {
+  font-family: verdana;
+  padding: 10px 0px 0px 0px;
+}
+
+p {
+  font-family: verdana;
 }
 
 code 
 {
-	font-family: Courier, monospace;
-	font-weight: bold;
-	color: darkblue;
+    font-family: Courier, monospace;
+    color: darkblue;
+}
+
+p.ex {
+    width: 100px;
 }
