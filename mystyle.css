@@ -68,7 +68,16 @@ h2 {
   padding: 10px 0px 0px 0px;
 }
 
-h3 {
+h4::before {
+  width: 0.85em;
+  height:0.85em;
+  background: rgb(185,0,0);
+  display:inline-block;
+  content: "";
+  margin-right: 10px;
+}
+
+h4 {
   font-family: verdana;
   padding: 10px 0px 0px 0px;
 }
