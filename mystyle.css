@@ -28,8 +28,8 @@ ul[place="body"] {
 }
 
 a {
-    color: grey;
-    text-decoration: none;
+  color: grey;
+  text-decoration: none;
 } 
 
 /* mouse over link */
@@ -54,8 +54,7 @@ li[place="body"] {
   padding: 0px 0px 0px 10px;
 }
 
-h2::before 
-{
+h2::before {
   width: 0.85em;
   height:0.85em;
   background: rgb(185,0,0);
@@ -78,16 +77,15 @@ p {
   font-family: verdana;
 }
 
-code 
-{
-    font-family: Consolas, 
-                 Monaco, 
-                 Lucida Console, 
-                 Liberation Mono, 
-                 DejaVu Sans Mono, 
-                 Bitstream Vera Sans Mono, 
-                 Courier New, 
-                 monospace, 
-                 serif;
-    color: darkblue;
+code {
+  font-family: Consolas, 
+                Monaco, 
+                Lucida Console, 
+                Liberation Mono, 
+                DejaVu Sans Mono, 
+                Bitstream Vera Sans Mono, 
+                Courier New, 
+                monospace, 
+               serif;
+  color: darkblue;
 }
