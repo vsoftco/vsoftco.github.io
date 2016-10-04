@@ -33,7 +33,7 @@ a {
 } 
 
 /* mouse over link */
-a:hover {
+a:hover, a:hover code {
     color: rgb(200,0,0);
 }
 
