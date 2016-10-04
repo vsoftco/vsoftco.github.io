@@ -56,8 +56,8 @@ li[place="body"] {
 
 h2::before 
 {
-  width: 1em;
-  height:1em;
+  width: 0.85em;
+  height:0.85em;
   background: rgb(180,0,0);
   display:inline-block;
   content: "";
