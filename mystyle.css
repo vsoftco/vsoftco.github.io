@@ -12,7 +12,7 @@ header {
 }
 
 body {
-  margin-top: 90px;
+  margin-top: 56px;
   font-family: verdana;
   min-width: 800px; 
   max-width: 1200px; 
@@ -34,7 +34,7 @@ a {
 
 /* mouse over link */
 a:hover {
-    color: red;
+    color: rgb(200,0,0);
 }
 
 a[id="anchor"] {
@@ -42,6 +42,8 @@ a[id="anchor"] {
     position: relative;
     top: -75px;
 }
+
+
 
 li[place="header"] {
   display: inline;
@@ -52,6 +54,16 @@ li[place="header"] {
 li[place="body"] {
   font-family: verdana;
   padding: 0px 0px 0px 10px;
+}
+
+h2::before 
+{
+  width: 1em;
+  height:1em;
+  background: rgb(180,0,0);
+  display:inline-block;
+  content: "";
+  margin-right: 10px;
 }
 
 h2 {
