@@ -215,20 +215,28 @@
           using phonetic alphabet(s) (NATO phonetic alphabet by default).
           <ul>
             <li>
-              Usage: 
+              usage: 
               <ul>
-                <li>
-                  <code> python3 spell.py [-h] [--dict DICT] [--text TEXT]</code>
-                </li>
+                  <code> python3 spell.py [-h] [--dict DICT] [text]</code>
               </ul>
               <br>
+            </li>
+            <li>
+              positional arguments:<br>
+              <ul>
+                  <code>text</code> text to be spelled, if ommited spells from the
+                                    standard input <br>
+              </ul>
+              <br>
+            </li>
+            <li>
               optional arguments:<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <code>-h, --help</code>   show this help message and exit <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <code>--dict DICT</code>  custom dictionary (in JSON format) <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <code>--text TEXT</code>  text to be spelled, if omitted spells from the standard input
+              <ul>
+                  <code>-h, --help</code>   show this help message and exit <br>
+              </ul>
+              <ul>
+                  <code>-d DICT, --dict DICT</code>  custom dictionary (in JSON format)
+              </ul>
             </li>
           </ul>
         </li><br>
@@ -241,37 +249,36 @@
             <li>
               Usage:
               <ul>
-                <li>
                   <code>python3 py3texnumber.py 
-                    <in.tex> <out.tex> <pattern> <replacement></code>
-                  - for the Python 3 version.
-                </li>
-                <li>
+                    &lt;in.tex&gt; &lt;out.tex&gt; &lt;pattern&gt;
+                    &lt;replacement&gt;</code>
+                    - for the Python 3 version.
+                  <br>
                   <code>python py2texnumber.py 
-                    <in.tex> <out.tex> <pattern> <replacement></code>
-                  - for the Python 2 version.
-                </li>
+                    &lt;in.tex&gt; &lt;out.tex&gt; &lt;pattern&gt;
+                    &lt;replacement&gt;</code>
+                    - for the Python 2 version.
               </ul>
             </li><br>
             <li>
-              Description: replaces all labels in <code>&lt;in.tex></code> 
-              that match a given input <code>&lt;pattern></code>, such as 
-              <code>\label{&lt;pattern>...}</code> and all corresponding 
+              Description: replaces all labels in <code>&lt;in.tex&gt;</code> 
+              that match a given input <code>&lt;pattern&gt;</code>, such as 
+              <code>\label{&lt;pattern&gt;...}</code> and all corresponding 
               references (<code>\ref</code>, <code>\eqref</code>, <code>\pageref</code>) 
-              with renumbered ones <code>&lt;replacement>idx</code>, where <code>idx</code>
-              counts the matching <code>\label{&lt;pattern>...}</code> 
+              with renumbered ones <code>&lt;replacement&gt;idx</code>, where <code>idx</code>
+              counts the matching <code>\label{&lt;pattern&gt;...}</code> 
               order of appearance, i.e. equals 1 for the first <code>\label</code>
               that matches the input pattern, 2 for the second etc. 
-              The file <code>&lt;in.tex></code> is left unchanged and the 
-              modifications are written to <code>&lt;out.tex></code>.
+              The file <code>&lt;in.tex&gt;</code> is left unchanged and the 
+              modifications are written to <code>&lt;out.tex&gt;</code>.
             </li><br>
             <li>
-              Example: consider a latex file <code>&lt;source.tex></code> having three labels, 
+              Example: consider a latex file <code>&lt;source.tex&gt;</code> having three labels, 
               named, in order of appearance, <code>\label{eqn5}</code>, 
               <code>\label{eqn_important}</code> and lastly <code>\label{entropy}</code>. 
               Then the command 
               <ul>
-                <li><code>python3 py3texnumber.py in.tex out.tex eqn Eqn</code></li>
+                <code>python3 py3texnumber.py in.tex out.tex eqn Eqn</code>
               </ul>
               replaces <code>\label{eqn5}</code> by <code>\label{Eqn1}</code> 
               (and also all references to <code>eqn5</code> automatically 
@@ -280,7 +287,7 @@
               (again together with the corresponding references). 
               The <code>\label{entropy}</code> remains unchanged since 
               it does not match the input pattern <code>\label{eqn...}</code>. 
-              The results are saved to the file <code>&lt;out.tex></code>.
+              The results are saved to the file <code>&lt;out.tex&gt;</code>.
             </li>
           </ul> 
         </li><br>
@@ -361,7 +368,7 @@
   
   <!-- Counter & last modified -->
   <p>  
-    Last modified: September 2020.<br>
+    Last modified: January 2021.<br>
     Visited for 
       <a href="http://www.easycounter.com/">
       <img src="http://www.easycounter.com/counter.php?vsoftco" alt="Web Counters" border="0">
