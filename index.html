@@ -124,17 +124,19 @@
 
       <h4> Referee service </h4>
       I am a referee for: Nature,
-        Physical Review Letters, 
+        Physical Review Letters,
         New Journal of Physics,
-        Physical Review A, 
-        Quantum Information Processing, 
-        Quantum Information and Computation, 
+        Quantum,
+        Physical Review A,
+        Quantum Information Processing,
+        Quantum Information and Computation,
         Quantum Science and Technology,
         Physics Letters A, 
         International Journal of Quantum Information, 
         Entropy,
         Optics Communications,
-        IEEE Security &amp; Privacy.
+        IEEE Security &amp; Privacy,
+        IEEE Transactions on Quantum Engineering.
         
         <br><br>
         I also referee grant proposals and I am on the program committee
@@ -176,7 +178,7 @@
           linear algebra library and, if available, the 
           <a href="http://openmp.org/">OpenMP</a> 
           multi-processing library.
-          Status: active, version 2.4 released on 13 May 2020 under the MIT License.
+          Status: active, version 2.6 released on 13 May 2020 under the MIT License.
         </li><br>
 
         <!-- liboqs -->
@@ -213,94 +215,18 @@
           <a href="https://github.com/vsoftco/spell"><code>spell</code></a> <br>&ndash;
           Tired of (mis)spelling your name during a phone call? <code>spell.py</code> does it for you,
           using phonetic alphabet(s) (NATO phonetic alphabet by default).
-          <ul>
-            <li>
-              usage: 
-              <ul>
-                  <code> python3 spell.py [-h] [--dict DICT] [text]</code>
-              </ul>
-              <br>
-            </li>
-            <li>
-              positional arguments:<br>
-              <ul>
-                  <code>text</code> text to be spelled, if ommited spells from the
-                                    standard input <br>
-              </ul>
-              <br>
-            </li>
-            <li>
-              optional arguments:<br>
-              <ul>
-                  <code>-h, --help</code>   show this help message and exit <br>
-              </ul>
-              <ul>
-                  <code>-d DICT, --dict DICT</code>  custom dictionary (in JSON format)
-              </ul>
-            </li>
-          </ul>
         </li><br>
 
         <!-- pytexnumber -->
         <li>
           <a href="https://github.com/vsoftco/pytexnumber"><code>pytexnumber</code></a> <br>&ndash;
           A Python 2/3 console program for renumbering latex references (labels).
-          <ul>
-            <li>
-              Usage:
-              <ul>
-                  <code>python3 py3texnumber.py 
-                    &lt;in.tex&gt; &lt;out.tex&gt; &lt;pattern&gt;
-                    &lt;replacement&gt;</code>
-                    - for the Python 3 version.
-                  <br>
-                  <code>python py2texnumber.py 
-                    &lt;in.tex&gt; &lt;out.tex&gt; &lt;pattern&gt;
-                    &lt;replacement&gt;</code>
-                    - for the Python 2 version.
-              </ul>
-            </li><br>
-            <li>
-              Description: replaces all labels in <code>&lt;in.tex&gt;</code> 
-              that match a given input <code>&lt;pattern&gt;</code>, such as 
-              <code>\label{&lt;pattern&gt;...}</code> and all corresponding 
-              references (<code>\ref</code>, <code>\eqref</code>, <code>\pageref</code>) 
-              with renumbered ones <code>&lt;replacement&gt;idx</code>, where <code>idx</code>
-              counts the matching <code>\label{&lt;pattern&gt;...}</code> 
-              order of appearance, i.e. equals 1 for the first <code>\label</code>
-              that matches the input pattern, 2 for the second etc. 
-              The file <code>&lt;in.tex&gt;</code> is left unchanged and the 
-              modifications are written to <code>&lt;out.tex&gt;</code>.
-            </li><br>
-            <li>
-              Example: consider a latex file <code>&lt;source.tex&gt;</code> having three labels, 
-              named, in order of appearance, <code>\label{eqn5}</code>, 
-              <code>\label{eqn_important}</code> and lastly <code>\label{entropy}</code>. 
-              Then the command 
-              <ul>
-                <code>python3 py3texnumber.py in.tex out.tex eqn Eqn</code>
-              </ul>
-              replaces <code>\label{eqn5}</code> by <code>\label{Eqn1}</code> 
-              (and also all references to <code>eqn5</code> automatically 
-              become references to <code>Eqn1</code>) and replace 
-              <code>\label{eqn_important}</code> by <code>\label{Eqn2}</code> 
-              (again together with the corresponding references). 
-              The <code>\label{entropy}</code> remains unchanged since 
-              it does not match the input pattern <code>\label{eqn...}</code>. 
-              The results are saved to the file <code>&lt;out.tex&gt;</code>.
-            </li>
-          </ul> 
         </li><br>
         
         <!-- cpptexnumber -->
         <li>
           <a href="https://github.com/vsoftco/cpptexnumber"><code>cpptexnumber</code></a> <br>&ndash;
           The C++11 version of <code>pytexnumber</code> above. A C++98 version is also available.
-          <ul>
-            <li>
-              Usage: same as <code>pytexnumber</code> above.
-            </li>
-          </ul>
         </li><br>
         
         <!-- GTexnumber -->
@@ -318,7 +244,7 @@
             <li>
                 Usage: Unzip the archive then run the program with 
                 <ul>
-                  <li><code>java -jar GTexnumber.jar</code></li>
+                  <code>java -jar GTexnumber.jar</code>
                 </ul>
             </li>
           </ul>
@@ -338,7 +264,7 @@
             <li>
                 Usage: Unzip the archive then run the program with 
                 <ul>
-                  <li><code>java -jar Texnumber.jar</code></li>
+                  <code>java -jar Texnumber.jar</code>
                 </ul>
             </li>
           </ul>
