@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/vladgheorghiu
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://vsoftco.github.io
+  * I am vladgheorghiu (https://keybase.io/vladgheorghiu) on keybase.
+  * I have a public key ASALxjPCjZ0OjmKd2ZyLwgcv-3Dt93R1jhMQK8jzH-N2Awo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200bc633c28d9d0e8e629dd99c8bc2072ffb70edf774758e13102bc8f31fe376030a",
+      "host": "keybase.io",
+      "kid": "01200bc633c28d9d0e8e629dd99c8bc2072ffb70edf774758e13102bc8f31fe376030a",
+      "uid": "79972f68193875e7304b931e8519ca19",
+      "username": "vladgheorghiu"
+    },
+    "merkle_root": {
+      "ctime": 1688668823,
+      "hash": "b4f4f61ac98b675474d553628eb42fccb5adfcc94a79c20a9e77b803ae14b19afeecc57b585b222e7ea3a1902d40810b67bd34edc84769743c69067f1b9b45b4",
+      "hash_meta": "8aa9ede8ce0928be10a9dc6da5c95fad25c45908803a2f492a65f480a3e8bc79",
+      "seqno": 24652889
+    },
+    "service": {
+      "entropy": "liaeOrkYYV0QSi1t7n8HkFSf",
+      "hostname": "vsoftco.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.4"
+  },
+  "ctime": 1688668837,
+  "expire_in": 504576000,
+  "prev": "9a5b59a29720f23d22861ed6bf2e464732f7c1e634a663d85de2b6fe6f5d28a2",
+  "seqno": 33,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgC8Yzwo2dDo5indmci8IHL/tw7fd0dY4TECvI8x/jdgMKp3BheWxvYWTESpcCIcQgmltZopcg8j0ihh7Wvy5GRzL3weY0pmPYXeK2/m9dKKLEIA5oC9XJLUSN+q7l1Ff4KKfF+h0UGbe6yjrD5gpXy0v8AgHCo3NpZ8RA7CeR3KrukWgYGtI1X+sUiyPBLrciScLy8crhnvAzIrNoPGmdI7g940L3SN9ZK/8mR47D7yH9sVN/Vl1zKVjXB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIC7RrX20Opcp0HpIcUfW6qh9jWOVdeFK2CCNU0XIz5kno3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/vladgheorghiu
+
+==================================================================
